@@ -1,0 +1,39 @@
+body {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    margin: 100px 0 -150px;
+    font-family: "Roboto", sans-serif;
+}
+
+h1 {
+    font-weight: 300;
+}
+
+button {
+    padding: 10px 40px;
+    border-radius: 5px;
+    border: transparent;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Estilo para o botão "Sim" */
+button:first-child {
+    background-color: green;
+}
+
+/* Estilo para o botão "Não" */
+button:nth-child(2) {
+    background-color: red;
+    position: absolute; /* Garantir que o botão possa se mover */
+}
+
+div.buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 100px;
+    margin-top: 30px;
+}
